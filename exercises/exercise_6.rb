@@ -38,7 +38,7 @@ puts "----------"
   hourly_rate: 100}
   ])
 
-  storesTest = Store.create(
+ storesTest = Store.create(
     {name: 'Bum',
     annual_revenue: '0',
     mens_apparel: true,
