@@ -10,3 +10,12 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts "Please enter the name of store you would like to input"
+input_str = STDIN.gets.chomp
+
+
+input_store = Store.create(name: input_str)
+
+
+# This doesn't work I need to display sequential messages
+# puts input_store.errors.details[:name]

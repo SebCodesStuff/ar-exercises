@@ -12,7 +12,7 @@ puts "----------"
 @store1.employees.create([
   {first_name: "Khurram",
   last_name: "Virani",
-  hourly_rate: 60},
+  hourly_rate: 70},
   {first_name: "Adam",
   last_name: "Brown",
   hourly_rate: 20},
@@ -37,3 +37,9 @@ puts "----------"
   last_name: "McLellan",
   hourly_rate: 100}
   ])
+
+  storesTest = Store.create(
+    {name: 'Bum',
+    annual_revenue: '0',
+    mens_apparel: true,
+    womens_apparel: true}).valid?
